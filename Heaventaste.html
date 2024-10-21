@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6f00;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+main{
+    height: max-content;
+    width: max-content;
+    
+}
+
+#restaurant-list {
+    padding: 20px;
+    /* border: 2px solid red; */
+    width: 95vw;
+    height: max-content;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.restaurant-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    /* border: 2px solid green; */
+    width: max-content;
+}
+
+.order-button {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+footer{
+    height: max-content;
+    width: max-content;
+    flex-direction:row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Heaven Taste</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">search</a></li>
+                <li><a href="./login.html">Sign in</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <h2>Restaurants</h2>
+        <br>
+        <section id="restaurant-list">
+           
+            <div class="restaurant-card" id="restaurant-template" >
+                <h3 class="restaurant-name"></h3>
+                <p class="restaurant-description"></p>
+                <button class="order-button">Order Now</button>
+                <div>
+                    <img src="pizz.jpg" alt="">
+                    <img src="gobi.jpg" alt="">
+                    <img src="dosa.jpg" alt="#">
+        
+        
+       
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
